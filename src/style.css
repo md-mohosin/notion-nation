@@ -23,7 +23,7 @@ body {
 }
 
 .margin-top {
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 
@@ -142,6 +142,55 @@ form [type='submit'] {
   color: white;
   border-radius: 5px;
   margin-top: 30px;
+}
+
+.expect {
+  height: 650px;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expect img {
+  height: 100%;
+  width: 40%;
+}
+
+.expect .number {
+  background-color: #F37621;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.expect-card-container {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.expect-card {
+  border: 1px solid gainsboro;
+  padding: 20px 30px;
+  position: relative;
+  width: 550px;
+}
+
+.expect-card p {
+  padding-top: 10px;
 }
 
 
@@ -285,7 +334,7 @@ form [type='submit'] {
     padding: 15px 0;
   }
 
-  .notion-link-btn{
+  .notion-link-btn {
     margin-top: 18px;
   }
 
