@@ -129,12 +129,14 @@ form [type='submit'] {
   gap: 100px;
 }
 
-.notion-title {
+.notion-title,
+.headache-title {
   font-size: 55px;
   padding: 25px 0;
 }
 
-.notion-link-btn {
+.notion-link-btn,
+.headache-link-btn {
   display: inline-block;
   background-color: #F37621;
   padding: 15px 30px;
@@ -155,6 +157,7 @@ form [type='submit'] {
 .expect img {
   height: 100%;
   width: 40%;
+  border-radius: 15px;
 }
 
 .expect .number {
@@ -170,6 +173,7 @@ form [type='submit'] {
   left: -12px;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
 }
 
 .expect-card-container {
@@ -191,6 +195,31 @@ form [type='submit'] {
 
 .expect-card p {
   padding-top: 10px;
+}
+
+.anti-headache {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+  border-radius: 12px;
+}
+
+.headache {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  width: 80%;
+  height: 600px;
+}
+
+.headache-content {
+  width: 50%;
+}
+
+.headache-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
 }
 
 
@@ -252,29 +281,48 @@ form [type='submit'] {
     flex-direction: column;
   }
 
-  .notion-title {
+  .headache {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    height: 700px;
+  }
+
+  .notion-title,
+  .headache-title {
     font-size: 40px;
     padding: 20px 0;
   }
 
-  .expect{
+  .expect {
     flex-direction: column;
     gap: 20px;
   }
 
-  .expect-card-container{
+  .expect-card-container {
     width: 100%;
   }
 
-  .expect img{
+  .expect img {
     width: 80%;
   }
 
-  .expect-card-container{
+  .expect-card-container {
     gap: 15px;
   }
 
-  .expect-card{
+  .expect-card {
+    width: 100%;
+  }
+
+  .expect {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+
+  .headache-content {
     width: 100%;
   }
 }
@@ -350,16 +398,27 @@ form [type='submit'] {
     width: 100%;
   }
 
-  .notion-title {
+  .headache-image {
+    width: 100%;
+    height: 350px;
+  }
+
+  .headache{
+    height: 600px;
+  }
+
+  .notion-title,
+  .headache-title {
     font-size: 25px;
     padding: 15px 0;
   }
 
-  .notion-link-btn {
+  .notion-link-btn,
+  .headache-link-btn {
     margin-top: 18px;
   }
 
-  .expect{
+  .expect {
     flex-direction: column;
     gap: 20px;
     height: auto;
@@ -369,6 +428,8 @@ form [type='submit'] {
     width: 100%;
   }
 
-  
+.headache{
+  gap: 20px;
+}
 
 }
