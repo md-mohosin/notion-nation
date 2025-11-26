@@ -256,6 +256,27 @@ form [type='submit'] {
     font-size: 40px;
     padding: 20px 0;
   }
+
+  .expect{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .expect-card-container{
+    width: 100%;
+  }
+
+  .expect img{
+    width: 80%;
+  }
+
+  .expect-card-container{
+    gap: 15px;
+  }
+
+  .expect-card{
+    width: 100%;
+  }
 }
 
 
@@ -337,5 +358,17 @@ form [type='submit'] {
   .notion-link-btn {
     margin-top: 18px;
   }
+
+  .expect{
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+
+  .expect img {
+    width: 100%;
+  }
+
+  
 
 }
