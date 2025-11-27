@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,704');
+
+
 body {
   background-color: white;
 }
+
+p{
+    color: rgb(131, 129, 129);
+}
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inter;
 }
 
 
@@ -82,6 +91,10 @@ body {
   align-items: center;
 }
 
+.banner p{
+  color: white;
+}
+
 .banner-content {
   width: 50%;
   /* border: 1px solid yellowgreen; */
@@ -136,7 +149,7 @@ form [type='submit'] {
 .notion-link-btn,
 .headache-link-btn {
   display: inline-block;
-  background-color: #F37621;
+  background-color: #F37621;border: 1px solid #F37621;
   padding: 15px 30px;
   text-decoration: none;
   color: white;
@@ -144,17 +157,20 @@ form [type='submit'] {
   margin-top: 30px;
 }
 
+.notion-link-btn:hover, .headache-link-btn:hover{
+  background-color: transparent;color: black;border: 1px solid #F37621;
+}
+
 .expect {
-  height: 650px;
-  display: flex;
+  height: 720px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .expect img {
-  height: 100%;
-  width: 40%;
+  height: 500px;
+  width: 450px;
   border-radius: 15px;
 }
 
@@ -182,6 +198,7 @@ form [type='submit'] {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 10px;
 }
 
 .expect-card {
@@ -191,8 +208,16 @@ form [type='submit'] {
   width: 550px;
 }
 
+.expect-card:hover{
+  border: 1px solid black;
+}
+
 .expect-card p {
   padding-top: 10px;
+}
+
+.expect-card h3{
+  font-size: 20px;
 }
 
 .anti-headache {
@@ -300,6 +325,9 @@ form [type='submit'] {
 }
 
 
+.footer ul a{
+  color: rgb(131, 129, 129);
+}
 
 
 
@@ -307,6 +335,53 @@ form [type='submit'] {
 
 
 
+
+
+
+
+@media (min-width:1001px) and (max-width:1300px) {
+  .banner-content{
+    width: 90%;
+  }
+
+  .content{
+    width: 90%;
+  }
+
+  .notion{
+    flex-direction: column;
+  }
+
+  .notion-image{
+    width: 700px;height: 600px;
+  }
+
+  .headache{
+    gap: 60px;
+  }
+
+  .expect{
+    height: 800px;
+  }
+
+  .expect-card{
+    width: 90%;
+  }
+
+  .headache-title{
+    font-size: 30px;
+  }
+
+.footer-section{
+  flex-direction: column;
+}
+
+.footer-link,.footer-form{
+  width: 70%;
+}
+
+
+}
 
 
 
@@ -315,7 +390,7 @@ form [type='submit'] {
 
 
 /* TABLET RESPONSIVE */
-@media (max-width:800px) {
+@media (max-width:1000px) {
   .logo {
     width: 40px;
     height: 40px;
@@ -340,7 +415,7 @@ form [type='submit'] {
 
   .banner {
     background-position: center;
-    height: 400px;
+    height: 470px;
   }
 
   .banner-content {
@@ -382,7 +457,7 @@ form [type='submit'] {
   }
 
   .expect img {
-    width: 80%;
+    width: 400px;height: 400px;
   }
 
   .expect-card-container {
@@ -415,6 +490,10 @@ form [type='submit'] {
   .footer-form,
   .footer-link {
     width: 80%;
+  }
+
+  .footer-link h3{
+    font-size: 20px;
   }
 
 }
@@ -517,7 +596,7 @@ form [type='submit'] {
   }
 
   .expect img {
-    width: 100%;
+    width: 300px;height: 300px;
   }
 
   .headache {
@@ -544,6 +623,10 @@ form [type='submit'] {
 
   .footer-form h4{
     padding-bottom: 20px;
+  }
+
+  .footer-link h3{
+    padding-bottom: 8px;
   }
 
 }
